@@ -1,3 +1,5 @@
+import Foundation
+
 /// Joins bytes from the generator to form an integer.
 ///
 /// - parameter generator: The input generator to unpack.

@@ -215,8 +215,8 @@
 		838662F01AAE0C9900FADC19 = {
 			isa = PBXGroup;
 			children = (
-				838662FC1AAE0C9900FADC19 /* MessagePack */,
-				838663091AAE0C9900FADC19 /* MessagePackTests */,
+				838662FC1AAE0C9900FADC19 /* Sources */,
+				838663091AAE0C9900FADC19 /* Tests */,
 				838662FB1AAE0C9900FADC19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		838662FC1AAE0C9900FADC19 /* MessagePack */ = {
+		838662FC1AAE0C9900FADC19 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				8334F1A81B29FCA000BDE13D /* ConvenienceInitializers.swift */,
@@ -248,10 +248,10 @@
 				838997471B28E2C6000FF79B /* Pack.swift */,
 				83A0D51B1B28BB3F0037E355 /* Unpack.swift */,
 			);
-			path = MessagePack;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		838663091AAE0C9900FADC19 /* MessagePackTests */ = {
+		838663091AAE0C9900FADC19 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				8372C3471B26CB2400C6D6C5 /* ArrayTests.swift */,
@@ -273,7 +273,7 @@
 				8372C3491B26CBC600C6D6C5 /* StringTests.swift */,
 				8372C3371B26C5A000C6D6C5 /* TrueTests.swift */,
 			);
-			path = MessagePackTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,7 +707,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.MessagePack;
@@ -729,7 +729,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.MessagePack;
@@ -746,7 +746,7 @@
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.MessagePackTests;
 				PRODUCT_NAME = MessagePackTests;
@@ -761,7 +761,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.MessagePackTests;
 				PRODUCT_NAME = MessagePackTests;
@@ -775,7 +775,7 @@
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePackTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -789,7 +789,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePackTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -893,7 +893,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -909,7 +909,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -933,7 +933,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -955,7 +955,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -975,7 +975,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MessagePackTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -991,7 +991,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePackTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1009,7 +1009,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1031,7 +1031,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = MessagePack/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1053,6 +1053,7 @@
 				1F7A01421C7B020E005F93F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F7A01461C7B020E005F93F9 /* Build configuration list for PBXNativeTarget "MessagePackTests-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1061,6 +1062,7 @@
 				1F7A01441C7B020E005F93F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8334F1B81B29FE9A00BDE13D /* Build configuration list for PBXNativeTarget "MessagePackTests-iOS" */ = {
 			isa = XCConfigurationList;

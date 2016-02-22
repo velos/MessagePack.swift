@@ -1,3 +1,6 @@
+import Dispatch
+import Foundation
+
 struct DispatchDataGenerator: GeneratorType {
     let data: dispatch_data_t
     var i: Int = 0
@@ -32,7 +35,9 @@ struct DispatchDataGenerator: GeneratorType {
             size = mapSize
         }
 
-        return buffer[i++ - offset]
+        let result = buffer[i - offset]
+        i += 1
+        return result
     }
 }
 
@@ -66,6 +71,8 @@ struct NSDataGenerator: GeneratorType {
             }
         }
 
-        return buffer[i++ - range.startIndex]
+        let result = buffer[i - range.startIndex]
+        i += 1
+        return result
     }
 }
