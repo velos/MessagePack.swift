@@ -10,7 +10,6 @@
 		1F7A013A1C7B020E005F93F9 /* MessagePack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7A01301C7B020E005F93F9 /* MessagePack.framework */; };
 		1F7A01471C7B026C005F93F9 /* ConvenienceInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334F1A81B29FCA000BDE13D /* ConvenienceInitializers.swift */; };
 		1F7A01481C7B026C005F93F9 /* ConvenienceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334F1AA1B29FDD600BDE13D /* ConvenienceProperties.swift */; };
-		1F7A01491C7B026C005F93F9 /* DataGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0D5181B28AEEF0037E355 /* DataGenerators.swift */; };
 		1F7A014A1C7B026C005F93F9 /* LiteralConvertibles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838997441B28E273000FF79B /* LiteralConvertibles.swift */; };
 		1F7A014B1C7B026C005F93F9 /* MessagePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838663191AAE0CF400FADC19 /* MessagePack.swift */; };
 		1F7A014C1C7B026C005F93F9 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838997471B28E2C6000FF79B /* Pack.swift */; };
@@ -77,8 +76,6 @@
 		838997461B28E276000FF79B /* LiteralConvertibles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838997441B28E273000FF79B /* LiteralConvertibles.swift */; };
 		838997481B28E2C6000FF79B /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838997471B28E2C6000FF79B /* Pack.swift */; };
 		838997491B28E2C6000FF79B /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838997471B28E2C6000FF79B /* Pack.swift */; };
-		83A0D5191B28AEEF0037E355 /* DataGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0D5181B28AEEF0037E355 /* DataGenerators.swift */; };
-		83A0D51A1B28AEEF0037E355 /* DataGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0D5181B28AEEF0037E355 /* DataGenerators.swift */; };
 		83A0D51C1B28BB3F0037E355 /* Unpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0D51B1B28BB3F0037E355 /* Unpack.swift */; };
 		83A0D51D1B28BB3F0037E355 /* Unpack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0D51B1B28BB3F0037E355 /* Unpack.swift */; };
 		83CEDDB21ABDEBAF00664CC8 /* MessagePack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CEDDA71ABDEBAF00664CC8 /* MessagePack.framework */; };
@@ -86,7 +83,6 @@
 		83D448911B5C8C9200B0F923 /* MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 838663181AAE0CF400FADC19 /* MessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83D448921B5C8C9B00B0F923 /* ConvenienceInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334F1A81B29FCA000BDE13D /* ConvenienceInitializers.swift */; };
 		83D448931B5C8C9B00B0F923 /* ConvenienceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334F1AA1B29FDD600BDE13D /* ConvenienceProperties.swift */; };
-		83D448941B5C8C9B00B0F923 /* DataGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0D5181B28AEEF0037E355 /* DataGenerators.swift */; };
 		83D448951B5C8C9B00B0F923 /* LiteralConvertibles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838997441B28E273000FF79B /* LiteralConvertibles.swift */; };
 		83D448961B5C8C9B00B0F923 /* MessagePack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838663191AAE0CF400FADC19 /* MessagePack.swift */; };
 		83D448971B5C8C9B00B0F923 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838997471B28E2C6000FF79B /* Pack.swift */; };
@@ -149,7 +145,6 @@
 		838663191AAE0CF400FADC19 /* MessagePack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MessagePack.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		838997441B28E273000FF79B /* LiteralConvertibles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteralConvertibles.swift; sourceTree = "<group>"; };
 		838997471B28E2C6000FF79B /* Pack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
-		83A0D5181B28AEEF0037E355 /* DataGenerators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerators.swift; sourceTree = "<group>"; };
 		83A0D51B1B28BB3F0037E355 /* Unpack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unpack.swift; sourceTree = "<group>"; };
 		83CEDDA71ABDEBAF00664CC8 /* MessagePack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessagePack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CEDDB11ABDEBAF00664CC8 /* MessagePackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagePackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,7 +235,6 @@
 			children = (
 				8334F1A81B29FCA000BDE13D /* ConvenienceInitializers.swift */,
 				8334F1AA1B29FDD600BDE13D /* ConvenienceProperties.swift */,
-				83A0D5181B28AEEF0037E355 /* DataGenerators.swift */,
 				838662FE1AAE0C9900FADC19 /* Info.plist */,
 				838997441B28E273000FF79B /* LiteralConvertibles.swift */,
 				838663181AAE0CF400FADC19 /* MessagePack.h */,
@@ -464,9 +458,11 @@
 					};
 					83CEDDA61ABDEBAF00664CC8 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0800;
 					};
 					83CEDDB01ABDEBAF00664CC8 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0800;
 					};
 					83D448881B5C8C4200B0F923 = {
 						CreatedOnToolsVersion = 7.0;
@@ -555,7 +551,6 @@
 			files = (
 				1F7A01471C7B026C005F93F9 /* ConvenienceInitializers.swift in Sources */,
 				1F7A01481C7B026C005F93F9 /* ConvenienceProperties.swift in Sources */,
-				1F7A01491C7B026C005F93F9 /* DataGenerators.swift in Sources */,
 				1F7A014A1C7B026C005F93F9 /* LiteralConvertibles.swift in Sources */,
 				1F7A014B1C7B026C005F93F9 /* MessagePack.swift in Sources */,
 				1F7A014C1C7B026C005F93F9 /* Pack.swift in Sources */,
@@ -621,7 +616,6 @@
 				838997481B28E2C6000FF79B /* Pack.swift in Sources */,
 				838997451B28E273000FF79B /* LiteralConvertibles.swift in Sources */,
 				8334F1A91B29FCA000BDE13D /* ConvenienceInitializers.swift in Sources */,
-				83A0D5191B28AEEF0037E355 /* DataGenerators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +629,6 @@
 				838997491B28E2C6000FF79B /* Pack.swift in Sources */,
 				838997461B28E276000FF79B /* LiteralConvertibles.swift in Sources */,
 				83CEDDC11ABDEC3D00664CC8 /* MessagePack.swift in Sources */,
-				83A0D51A1B28AEEF0037E355 /* DataGenerators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +662,6 @@
 			files = (
 				83D448921B5C8C9B00B0F923 /* ConvenienceInitializers.swift in Sources */,
 				83D448931B5C8C9B00B0F923 /* ConvenienceProperties.swift in Sources */,
-				83D448941B5C8C9B00B0F923 /* DataGenerators.swift in Sources */,
 				83D448951B5C8C9B00B0F923 /* LiteralConvertibles.swift in Sources */,
 				83D448961B5C8C9B00B0F923 /* MessagePack.swift in Sources */,
 				83D448971B5C8C9B00B0F923 /* Pack.swift in Sources */,
@@ -940,6 +932,7 @@
 				PRODUCT_NAME = MessagePack;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -962,6 +955,7 @@
 				PRODUCT_NAME = MessagePack;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -981,6 +975,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MessagePackTests;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -997,6 +992,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MessagePackTests;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1053,6 +1049,7 @@
 				1F7A01421C7B020E005F93F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F7A01461C7B020E005F93F9 /* Build configuration list for PBXNativeTarget "MessagePackTests-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1061,6 +1058,7 @@
 				1F7A01441C7B020E005F93F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8334F1B81B29FE9A00BDE13D /* Build configuration list for PBXNativeTarget "MessagePackTests-iOS" */ = {
 			isa = XCConfigurationList;

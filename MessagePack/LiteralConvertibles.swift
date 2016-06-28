@@ -1,12 +1,12 @@
 extension MessagePackValue: ArrayLiteralConvertible {
     public init(arrayLiteral elements: MessagePackValue...) {
-        self = .Array(elements)
+        self = .array(elements)
     }
 }
 
 extension MessagePackValue: BooleanLiteralConvertible {
     public init(booleanLiteral value: Swift.Bool) {
-        self = .Bool(value)
+        self = .bool(value)
     }
 }
 
@@ -17,42 +17,42 @@ extension MessagePackValue: DictionaryLiteralConvertible {
             dict[key] = value
         }
 
-        self = .Map(dict)
+        self = .map(dict)
     }
 }
 
 extension MessagePackValue: ExtendedGraphemeClusterLiteralConvertible {
     public init(extendedGraphemeClusterLiteral value: Swift.String) {
-        self = .String(value)
+        self = .string(value)
     }
 }
 
 extension MessagePackValue: FloatLiteralConvertible {
     public init(floatLiteral value: Swift.Double) {
-        self = .Double(value)
+        self = .double(value)
     }
 }
 
 extension MessagePackValue: IntegerLiteralConvertible {
     public init(integerLiteral value: Int64) {
-        self = .Int(value)
+        self = .int(value)
     }
 }
 
 extension MessagePackValue: NilLiteralConvertible {
     public init(nilLiteral: ()) {
-        self = .Nil
+        self = .nil
     }
 }
 
 extension MessagePackValue: StringLiteralConvertible {
     public init(stringLiteral value: Swift.String) {
-        self = .String(value)
+        self = .string(value)
     }
 }
 
 extension MessagePackValue: UnicodeScalarLiteralConvertible {
     public init(unicodeScalarLiteral value: Swift.String) {
-        self = .String(value)
+        self = .string(value)
     }
 }
