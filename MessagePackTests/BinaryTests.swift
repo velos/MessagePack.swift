@@ -68,7 +68,7 @@ class BinaryTests: XCTestCase {
         ]
         for data in dataArray {
             do {
-                try unpack(data)
+                try _ = unpack(data)
                 XCTFail("Expected unpack to throw")
             } catch {
                 XCTAssertEqual(error as? MessagePackError, .insufficientData)

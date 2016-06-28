@@ -76,7 +76,7 @@ class DescriptionTests: XCTestCase {
 
         var isValid = false
         for indices in indexPermutations {
-            let permutation = PermutationGenerator(elements: components, indices: indices)
+            let permutation = components.permutation(with: indices)
             let innerDescription = permutation.joined(separator: ", ")
             if description == "Map([\(innerDescription)])" {
                 isValid = true
@@ -90,5 +90,15 @@ class DescriptionTests: XCTestCase {
     func testExtendedDescription() {
         XCTAssertEqual(MessagePackValue.extended(5, []).description, "Extended(5, [])")
         XCTAssertEqual(MessagePackValue.extended(5, [0x00, 0x10, 0x20, 0x30, 0x40]).description, "Extended(5, [0x00, 0x10, 0x20, 0x30, 0x40])")
+    }
+}
+
+extension Array {
+    func permutation(with indices: [Int]) -> [Element] {
+        var result: [Element] = []
+        for index in indices {
+            result.append(self[index])
+        }
+        return result
     }
 }

@@ -118,7 +118,7 @@ class IntegerTests: XCTestCase {
         let dataArray: [MessagePack.Data] = [[0xd0], [0xd1], [0xd2], [0xd3], [0xd4]]
         for data in dataArray {
             do {
-                try unpack(data)
+                try _ = unpack(data)
                 XCTFail("Expected unpack to throw")
             } catch {
                 XCTAssertEqual(error as? MessagePackError, .insufficientData)
