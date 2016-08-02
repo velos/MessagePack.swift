@@ -452,9 +452,11 @@
 					};
 					8334F1AF1B29FE9A00BDE13D = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					838662F91AAE0C9900FADC19 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 					83CEDDA61ABDEBAF00664CC8 = {
 						CreatedOnToolsVersion = 6.3;
@@ -772,6 +774,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MessagePackTests;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -786,6 +789,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MessagePackTests;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -893,6 +897,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MessagePack;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -909,6 +914,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "us.pandamonia.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = MessagePack;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

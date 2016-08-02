@@ -96,7 +96,7 @@ extension MessagePackValue: CustomStringConvertible {
     }
 }
 
-public enum MessagePackError: ErrorProtocol {
+public enum MessagePackError: Error {
     case insufficientData
     case invalidData
 }
