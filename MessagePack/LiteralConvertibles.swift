@@ -10,7 +10,7 @@ extension MessagePackValue: ExpressibleByBooleanLiteral {
     }
 }
 
-extension MessagePackValue: DictionaryLiteralConvertible {
+extension MessagePackValue: ExpressibleByDictionaryLiteral {
     public init(dictionaryLiteral elements: (MessagePackValue, MessagePackValue)...) {
         var dict = [MessagePackValue : MessagePackValue](minimumCapacity: elements.count)
         for (key, value) in elements {
@@ -27,31 +27,31 @@ extension MessagePackValue: ExpressibleByExtendedGraphemeClusterLiteral {
     }
 }
 
-extension MessagePackValue: FloatLiteralConvertible {
+extension MessagePackValue: ExpressibleByFloatLiteral {
     public init(floatLiteral value: Swift.Double) {
         self = .double(value)
     }
 }
 
-extension MessagePackValue: IntegerLiteralConvertible {
+extension MessagePackValue: ExpressibleByIntegerLiteral {
     public init(integerLiteral value: Int64) {
         self = .int(value)
     }
 }
 
-extension MessagePackValue: NilLiteralConvertible {
+extension MessagePackValue: ExpressibleByNilLiteral {
     public init(nilLiteral: ()) {
         self = .nil
     }
 }
 
-extension MessagePackValue: StringLiteralConvertible {
+extension MessagePackValue: ExpressibleByStringLiteral {
     public init(stringLiteral value: Swift.String) {
         self = .string(value)
     }
 }
 
-extension MessagePackValue: UnicodeScalarLiteralConvertible {
+extension MessagePackValue: ExpressibleByUnicodeScalarLiteral {
     public init(unicodeScalarLiteral value: Swift.String) {
         self = .string(value)
     }
