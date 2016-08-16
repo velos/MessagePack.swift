@@ -12,8 +12,8 @@ func string(_ length: Int, repeatedValue: String = "*") -> String {
     return str
 }
 
-func data(_ string: String) -> ArraySlice<UInt8> {
-    return string.nulTerminatedUTF8.dropLast()
+func data(_ string: String) -> Array<UInt8> {
+    return string.utf8CString.dropLast(1).map { return UInt8($0) }
 }
 
 class StringTests: XCTestCase {

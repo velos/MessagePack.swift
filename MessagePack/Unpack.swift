@@ -4,7 +4,7 @@
 /// - parameter size: The size of the integer.
 ///
 /// - returns: An integer representation of `size` bytes of data.
-func unpackInteger<G: IteratorProtocol where G.Element == Byte>(_ generator: inout G, size: Int) throws -> UInt64 {
+func unpackInteger<G: IteratorProtocol>(_ generator: inout G, size: Int) throws -> UInt64 where G.Element == Byte {
     var value: UInt64 = 0
     for _ in 0..<size {
         if let byte = generator.next() {
@@ -23,7 +23,7 @@ func unpackInteger<G: IteratorProtocol where G.Element == Byte>(_ generator: ino
 /// - parameter length: The length of the string.
 ///
 /// - returns: A string representation of `size` bytes of data.
-func unpackString<G: IteratorProtocol where G.Element == Byte>(_ generator: inout G, length: Int) throws -> String {
+func unpackString<G: IteratorProtocol>(_ generator: inout G, length: Int) throws -> String where G.Element == Byte {
     var bytes = Data()
     bytes.reserveCapacity(length)
 
@@ -48,7 +48,7 @@ func unpackString<G: IteratorProtocol where G.Element == Byte>(_ generator: inou
 /// - parameter length: The length of the data.
 ///
 /// - returns: A subsection of data representing `size` bytes.
-func unpackData<G: IteratorProtocol where G.Element == Byte>(_ generator: inout G, length: Int) throws -> Data {
+func unpackData<G: IteratorProtocol>(_ generator: inout G, length: Int) throws -> Data where G.Element == Byte {
     var data = Data()
     data.reserveCapacity(length)
 
@@ -69,7 +69,7 @@ func unpackData<G: IteratorProtocol where G.Element == Byte>(_ generator: inout 
 /// - parameter count: The number of elements to unpack.
 ///
 /// - returns: An array of `count` elements.
-func unpackArray<G: IteratorProtocol where G.Element == Byte>(_ generator: inout G, count: Int, compatibility: Bool) throws -> [MessagePackValue] {
+func unpackArray<G: IteratorProtocol>(_ generator: inout G, count: Int, compatibility: Bool) throws -> [MessagePackValue] where G.Element == Byte {
     var values = [MessagePackValue]()
     values.reserveCapacity(count)
 
@@ -87,7 +87,7 @@ func unpackArray<G: IteratorProtocol where G.Element == Byte>(_ generator: inout
 /// - parameter count: The number of elements to unpack.
 ///
 /// - returns: An dictionary of `count` entries.
-func unpackMap<G: IteratorProtocol where G.Element == Byte>(_ generator: inout G, count: Int, compatibility: Bool) throws -> [MessagePackValue : MessagePackValue] {
+func unpackMap<G: IteratorProtocol>(_ generator: inout G, count: Int, compatibility: Bool) throws -> [MessagePackValue : MessagePackValue] where G.Element == Byte {
     var dict = [MessagePackValue : MessagePackValue](minimumCapacity: count)
     var lastKey: MessagePackValue? = nil
 
@@ -109,7 +109,7 @@ func unpackMap<G: IteratorProtocol where G.Element == Byte>(_ generator: inout G
 /// - parameter generator: The input generator to unpack.
 ///
 /// - returns: A `MessagePackValue`.
-public func unpack<G: IteratorProtocol where G.Element == Byte>(_ generator: inout G, compatibility: Bool = false) throws -> MessagePackValue {
+public func unpack<G: IteratorProtocol>(_ generator: inout G, compatibility: Bool = false) throws -> MessagePackValue where G.Element == Byte {
     if let value = generator.next() {
         switch value {
 
@@ -295,7 +295,7 @@ public func unpack(_ data: DispatchData, compatibility: Bool = false) throws -> 
 /// - parameter data: The data to unpack.
 ///
 /// - returns: The contained `MessagePackValue`.
-public func unpack<S: Sequence where S.Iterator.Element == Byte>(_ data: S, compatibility: Bool = false) throws -> MessagePackValue {
+public func unpack<S: Sequence>(_ data: S, compatibility: Bool = false) throws -> MessagePackValue where S.Iterator.Element == Byte {
     var generator = data.makeIterator()
     return try unpack(&generator, compatibility: compatibility)
 }

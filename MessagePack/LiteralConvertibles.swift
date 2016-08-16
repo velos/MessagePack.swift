@@ -1,10 +1,10 @@
-extension MessagePackValue: ArrayLiteralConvertible {
+extension MessagePackValue: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: MessagePackValue...) {
         self = .array(elements)
     }
 }
 
-extension MessagePackValue: BooleanLiteralConvertible {
+extension MessagePackValue: ExpressibleByBooleanLiteral {
     public init(booleanLiteral value: Swift.Bool) {
         self = .bool(value)
     }
@@ -21,7 +21,7 @@ extension MessagePackValue: DictionaryLiteralConvertible {
     }
 }
 
-extension MessagePackValue: ExtendedGraphemeClusterLiteralConvertible {
+extension MessagePackValue: ExpressibleByExtendedGraphemeClusterLiteral {
     public init(extendedGraphemeClusterLiteral value: Swift.String) {
         self = .string(value)
     }
